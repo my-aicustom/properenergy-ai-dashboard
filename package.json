@@ -11,7 +11,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "test": "node --test tests/*.test.mjs",
-    "check:syntax": "node --check public/assets/pitch-v4.js && node --check local-server/server.mjs && node --check public/assets/ops-app.js && node --check local-server/seed.mjs && node --check local-server/store.mjs"
+    "check:syntax": "node --check src/lib/marketing.mjs && node --check public/assets/site.js && node --check scripts/build-local-preview.mjs && node --check local-server/server.mjs && node --check public/assets/ops-app.js && node --check local-server/store.mjs && node --check src/lib/articles.mjs && node --check public/assets/site-v6.js",
+    "site:static": "node scripts/build-local-preview.mjs"
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",
