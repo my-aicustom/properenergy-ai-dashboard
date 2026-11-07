@@ -91,22 +91,27 @@ import '../styles/global.css';
         </span>
       </div>
 
-      <!-- Time of Day Simulator -->
-      <div class="flex items-center gap-2">
-        <div class="bg-slate-100 p-1 rounded-xl flex items-center gap-1 border border-slate-200">
+      <!-- Time of Day Simulator & Demo Portal Switcher -->
+      <div class="flex items-center gap-3">
+        <div class="hidden sm:flex bg-slate-100 p-1 rounded-xl items-center gap-1 border border-slate-200">
           <button type="button" class="sim-btn px-2.5 py-1 text-xs font-semibold rounded-lg transition-all bg-white text-slate-900 shadow-sm" data-time="siang">
-            ☀️ Siang (12:30)
+            ☀️ Siang
           </button>
           <button type="button" class="sim-btn px-2.5 py-1 text-xs font-semibold rounded-lg transition-all text-slate-600 hover:text-slate-900" data-time="pagi">
-            🌅 Pagi (08:00)
+            🌅 Pagi
           </button>
           <button type="button" class="sim-btn px-2.5 py-1 text-xs font-semibold rounded-lg transition-all text-slate-600 hover:text-slate-900" data-time="sore">
-            🌇 Sore (16:30)
+            🌇 Sore
           </button>
           <button type="button" class="sim-btn px-2.5 py-1 text-xs font-semibold rounded-lg transition-all text-slate-600 hover:text-slate-900" data-time="malam">
-            🌙 Malam (20:00)
+            🌙 Malam
           </button>
         </div>
+
+        <a href="/demo" class="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-700 text-white font-bold text-xs shadow-md shadow-emerald-500/20 hover:from-emerald-500 hover:to-teal-600 transition-all border border-emerald-500/30">
+          <span>🖥️ Dashboard Demo Operasional</span>
+          <span>➔</span>
+        </a>
       </div>
 
     </div>
