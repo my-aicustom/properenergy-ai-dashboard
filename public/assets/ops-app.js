@@ -34,7 +34,7 @@ function localDB(){try{let s=JSON.parse(localStorage.getItem(STORAGE)||'null');i
 function persist(){if(S.mode==='browser'&&S.data)localStorage.setItem(STORAGE,JSON.stringify(S.data));}
 function addAudit(action,entity,description){S.data.activity.unshift({id:'ACT-'+Date.now(),who:S.user?.email||'demo',action,entity,description,time:new Date().toISOString()});}
 function uid(prefix,rows){return prefix+'-'+String(Math.max(0,...rows.map(x=>Number(x.id.split('-').at(-1))||0))+1).padStart(4,'0');}
-async function probe(){try{const controller=new AbortController();const to=setTimeout(()=>controller.abort(),1500);const r=await fetch('/ops-api/status',{signal:controller.signal,cache:'no-store'});clearTimeout(to);if(r.ok && (await r.json()).mode==='local-demo')S.mode='local';}catch{S.mode='browser';}}
+async function probe(){if(typeof location!=='undefined'&&location.hostname!=='localhost'&&location.hostname!=='127.0.0.1'){S.mode='browser';return;}try{const controller=new AbortController();const to=setTimeout(()=>controller.abort(),1500);const r=await fetch('/ops-api/status',{signal:controller.signal,cache:'no-store'});clearTimeout(to);if(r.ok && (await r.json()).mode==='local-demo')S.mode='local';}catch{S.mode='browser';}}
 async function api(endpoint,{method='GET',body}={}){
  if(S.mode==='local'){const r=await fetch('/ops-api/'+endpoint,{method,headers:{...(body?{'Content-Type':'application/json'}:{})},body:body?JSON.stringify(body):undefined,credentials:'same-origin'});let j=await r.json();if(!r.ok||j.ok===false)throw new Error(j.error||'Gagal mengakses server lokal.');return j;}
  return browserApi(endpoint,method,body);
