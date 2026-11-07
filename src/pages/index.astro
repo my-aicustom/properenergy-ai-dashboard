@@ -77,8 +77,8 @@ import '../styles/global.css';
 
       <!-- Inverter Multi-Brand Switcher (Core Feature 4) -->
       <div class="hidden lg:flex items-center gap-2 bg-slate-100/80 p-1.5 rounded-xl border border-slate-200">
-        <span class="text-xs font-semibold text-slate-500 px-2">Unit Inverter:</span>
-        <select id="inverter-select" class="bg-white text-xs font-semibold text-slate-800 py-1.5 px-3 rounded-lg border border-slate-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
+        <span class="text-xs font-semibold text-slate-700 px-2">Unit Inverter:</span>
+        <select id="inverter-select" aria-label="Pilih Unit Inverter" class="bg-white text-xs font-semibold text-slate-800 py-1.5 px-3 rounded-lg border border-slate-300 shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500">
           <option value="huawei">Huawei SUN2000-10KTL (Rumah Bintaro Sector 9)</option>
           <option value="sungrow">Sungrow SG10RS (Cluster Kebayoran Residences)</option>
           <option value="goodwe">GoodWe EH-6000 (Pondok Indah Estate)</option>
@@ -183,9 +183,9 @@ import '../styles/global.css';
           <span id="kpi-power" class="text-3xl font-extrabold text-slate-900 tracking-tight">14.8</span>
           <span class="text-sm font-bold text-slate-500">kW</span>
         </div>
-        <div class="mt-2 flex items-center gap-1.5 text-xs text-emerald-600 font-semibold">
+        <div class="mt-2 flex items-center gap-1.5 text-xs text-emerald-800 font-bold">
           <span>▲ 94.2%</span>
-          <span class="text-slate-400 font-normal">dari kurva ideal jam ini</span>
+          <span class="text-slate-600 font-medium">dari kurva ideal jam ini</span>
         </div>
       </div>
 
@@ -218,7 +218,7 @@ import '../styles/global.css';
           <span id="kpi-battery" class="text-3xl font-extrabold text-slate-900 tracking-tight">88%</span>
           <span class="text-xs font-medium text-slate-500">(15.2 kWh)</span>
         </div>
-        <div class="mt-2 flex items-center gap-1 text-xs text-emerald-600 font-semibold">
+        <div class="mt-2 flex items-center gap-1 text-xs text-emerald-800 font-bold">
           <span>🛡️ Backup Siap:</span>
           <span id="kpi-backup-hours" class="font-mono text-slate-700 font-bold">8.4 Jam</span>
         </div>
@@ -607,7 +607,7 @@ import '../styles/global.css';
           </div>
 
           <!-- Chat History Mock -->
-          <div id="chat-stream-box" class="space-y-3 text-xs max-h-[280px] overflow-y-auto pr-1">
+          <div id="chat-stream-box" tabindex="0" role="region" aria-label="Riwayat Percakapan AI" class="space-y-3 text-xs max-h-[280px] overflow-y-auto pr-1">
             <div class="bg-slate-800/80 p-3 rounded-2xl rounded-tl-none border border-slate-700/60 text-slate-200">
               👋 Halo Pak! Saya <strong>Proper Energy AI Copilot</strong> ditenagai model OpenRouter. Sistem PLTS Anda di Bintaro beroperasi <strong>94.2% optimal</strong> hari ini. Silakan tanyakan apa saja seputar performa, penghematan, atau error inverter.
             </div>
