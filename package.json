@@ -1,12 +1,17 @@
 {
   "name": "properenergy-ai-dashboard",
+  "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
+    "demo": "node local-server/server.mjs",
+    "dev:full": "node local-server/dev-full.mjs",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test": "node --test tests/*.test.mjs",
+    "check:syntax": "node --check public/assets/pitch-v4.js && node --check local-server/server.mjs && node --check public/assets/ops-app.js && node --check local-server/seed.mjs && node --check local-server/store.mjs"
   },
   "dependencies": {
     "@astrojs/tailwind": "^6.0.2",

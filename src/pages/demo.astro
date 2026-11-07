@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="theme-color" content="#10231e" />
-  <link rel="icon" type="image/png" href="/assets/proper-energy-logo.png" />
-  <meta name="description" content="Proper Energy Operations Studio — Intelligence Platform untuk PLTS Tumbuh & Monitoring Multi-Merek (Huawei, Deye, Solis, Sungrow, Growatt, SMA)." />
-  <title>Proper Energy · AI Operations Studio</title>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <meta name="description" content="Studio Operasional Surya Proper Energy. Demonstrasi interaktif pemantauan multi-lokasi surya, aliran daya, alarm, dan finansial." />
+  <title>Studio Operasional Surya · Proper Energy</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -15,46 +19,45 @@
 <body>
 <div class="app-stage" id="app-stage">
   <aside id="sidebar" class="sidebar" aria-label="Navigasi dashboard">
-    <a class="brand" href="#overview" style="display:flex;align-items:center;gap:10px;padding:6px 8px 22px;text-decoration:none;">
+    <a class="brand" href="#overview" style="display:flex;align-items:center;gap:10px;padding:6px 8px 22px;text-decoration:none;" aria-label="Proper Energy STUDIO OPERASIONAL">
       <img src="/assets/proper-energy-logo-white.png" alt="Proper Energy" style="height:36px;width:auto;object-fit:contain;" />
-      <span style="font-size:8px;letter-spacing:0.18em;font-weight:800;color:#d9f19b;border-left:1px solid #355142;padding-left:8px;line-height:1.2;">OPERATIONS<br/>STUDIO</span>
+      <span style="font-size:8px;letter-spacing:0.18em;font-weight:800;color:#d9f19b;border-left:1px solid #355142;padding-left:8px;line-height:1.2;">STUDIO<br/>OPERASIONAL</span>
     </a>
-    <div class="workspace-select"><span class="workspace-avatar">P</span><span class="workspace-copy"><b>Proper Energy</b><small>Indonesia · Workspace</small></span><span class="workspace-chevron">⌄</span></div>
-    <div class="sidebar-group-label">OPERATIONS</div>
+    <div class="workspace-select"><span class="workspace-avatar">P</span><span class="workspace-copy"><b>Proper Energy</b><small>Indonesia · Ruang Operasi</small></span><span class="workspace-chevron">⌄</span></div>
+    <div class="sidebar-group-label">OPERASIONAL</div>
     <nav id="nav-primary" class="sidebar-nav">
-      <button type="button" data-view="overview" class="nav-link active"><span class="nav-glyph">◫</span>Overview</button>
-      <button type="button" data-view="fleet" class="nav-link"><span class="nav-glyph">▦</span>Fleet & locations <span class="nav-number" id="nav-sites">16</span></button>
-      <button type="button" data-view="energy" class="nav-link"><span class="nav-glyph">⇄</span>Live energy flow</button>
-      <button type="button" data-view="alerts" class="nav-link"><span class="nav-glyph">♧</span>Alerts & incidents <span class="nav-number alert-num" id="nav-alerts">4</span></button>
-      <button type="button" data-view="orders" class="nav-link"><span class="nav-glyph">▤</span>Work orders</button>
+      <button type="button" data-view="overview" class="nav-link active"><span class="nav-glyph">◫</span>Ringkasan</button>
+      <button type="button" data-view="fleet" class="nav-link"><span class="nav-glyph">▦</span>Armada & Lokasi <span class="nav-number" id="nav-sites">16</span></button>
+      <button type="button" data-view="energy" class="nav-link"><span class="nav-glyph">⇄</span>Aliran Daya Langsung</button>
+      <button type="button" data-view="alerts" class="nav-link"><span class="nav-glyph">♧</span>Alarm & Insiden <span class="nav-number alert-num" id="nav-alerts">4</span></button>
+      <button type="button" data-view="orders" class="nav-link"><span class="nav-glyph">▤</span>Perintah Kerja</button>
     </nav>
-    <div class="sidebar-group-label">INSIGHTS & BUSINESS</div>
+    <div class="sidebar-group-label">WAWASAN & BISNIS</div>
     <nav class="sidebar-nav">
-      <button type="button" data-view="analytics" class="nav-link"><span class="nav-glyph">⌁</span>Energy analytics</button>
-      <button type="button" data-view="customers" class="nav-link"><span class="nav-glyph">◎</span>Customer care</button>
-      <button type="button" data-view="finance" class="nav-link"><span class="nav-glyph">◈</span>Finance center</button>
-      <button type="button" data-view="reports" class="nav-link"><span class="nav-glyph">↧</span>Reports & export</button>
-      <button type="button" data-view="copilot" class="nav-link"><span class="nav-glyph">✳</span>AI insights lab</button>
+      <button type="button" data-view="analytics" class="nav-link"><span class="nav-glyph">⌁</span>Analitik Energi</button>
+      <button type="button" data-view="customers" class="nav-link"><span class="nav-glyph">◎</span>Layanan Pelanggan</button>
+      <button type="button" data-view="finance" class="nav-link"><span class="nav-glyph">◈</span>Pusat Keuangan</button>
+      <button type="button" data-view="reports" class="nav-link"><span class="nav-glyph">↧</span>Laporan & Ekspor</button>
+      <button type="button" data-view="copilot" class="nav-link"><span class="nav-glyph">✳</span>Laboratorium AI</button>
     </nav>
-    <div class="sidebar-group-label">WORKSPACE</div>
-    <nav class="sidebar-nav"><button type="button" data-view="settings" class="nav-link"><span class="nav-glyph">⚙</span>Settings & audit</button></nav>
+    <div class="sidebar-group-label">RUANG KERJA</div>
+    <nav class="sidebar-nav"><button type="button" data-view="settings" class="nav-link"><span class="nav-glyph">⚙</span>Pengaturan & Audit</button></nav>
     <div class="side-bottom">
-      <div class="side-signal"><span class="signal-top"><i class="signal-pulse"></i> LIVE COCKPIT</span><strong>Multi-Brand Solar NOC</strong><p>Telemetri 16 lokasi pelanggan: Huawei, Deye, Solis, Sungrow, Growatt, SMA.</p><button type="button" id="start-tour-side" class="side-cta">Mulai demo terpandu <span>↗</span></button></div>
-      <button type="button" id="side-profile" class="side-profile"><span class="avatar-small">PE</span><span><b id="side-user-name">Demo operator</b><small id="side-user-role">Operations workspace</small></span><span>⋯</span></button>
+      <div class="side-signal"><span class="signal-top"><i class="signal-pulse"></i> MODE DEMO INTERAKTIF</span><strong>Data Terkendali. Aman Teruji.</strong><p>Semua angka dalam dashboard adalah simulasi aman. Tidak ada pengendalian perangkat keras jarak jauh.</p><button type="button" id="start-tour-side" class="side-cta">Mulai tur terpandu <span>↗</span></button></div>
+      <button type="button" id="side-profile" class="side-profile"><span class="avatar-small">PE</span><span><b id="side-user-name">Operator Demo</b><small id="side-user-role">Ruang Operasional</small></span><span>⋯</span></button>
     </div>
   </aside>
   <div class="main-layout">
     <header class="topbar">
-      <div class="topbar-left"><button id="mobile-menu" class="icon-action mobile-toggle" type="button" aria-label="Tampilkan menu" aria-expanded="false">☰</button><span class="bread">WORKSPACE <span class="bread-div">/</span> <b id="bread-current">Overview</b></span><span class="source-flag"><i></i> NOC AKTIF</span></div>
-      <div class="topbar-right">
-        <span id="clock-label" class="clock-label"></span><button type="button" class="top-search" id="global-search" aria-label="Cari lokasi atau fitur"><span class="search-symbol">⌕</span><span class="search-label">Cari lokasi...</span><kbd>/</kbd></button><button type="button" id="top-alert-button" class="icon-action alert-action" aria-label="Lihat insiden">♧<i></i></button><button type="button" id="tour-trigger" class="text-action">Tour <span>↗</span></button><button type="button" id="logout-button" class="profile-button" title="Ganti Peran" aria-label="PE - Ganti Peran">PE</button></div>
+      <div class="topbar-left"><button id="mobile-menu" class="icon-action mobile-toggle" type="button" aria-label="Tampilkan menu" aria-expanded="false">☰</button><span class="bread">RUANG KERJA <span class="bread-div">/</span> <b id="bread-current">Ringkasan</b></span><span class="source-flag"><i></i> DATA SIMULASI</span></div>
+      <div class="topbar-right"><span id="clock-label" class="clock-label"></span><button type="button" class="top-search" id="global-search" aria-label="Cari lokasi atau fitur"><span class="search-symbol">⌕</span><span class="search-label">Cari lokasi...</span><kbd>/</kbd></button><button type="button" id="top-alert-button" class="icon-action alert-action" aria-label="Lihat insiden">♧<i></i></button><button type="button" id="tour-trigger" class="text-action">Panduan <span>↗</span></button><button type="button" id="logout-button" class="profile-button" title="PE - Keluar sesi demo" aria-label="PE - Keluar sesi demo">PE</button></div>
     </header>
-    <main class="main-content" id="view-root" tabindex="-1" aria-live="polite"><div class="loading-view"><div class="loading-spinner"></div><h1>Menyiapkan workspace...</h1><p>Memuat skenario operasional solar.</p></div></main>
-    <footer class="bottom-note">© 2026 Proper Energy · Intelligence Platform by My AI Custom Architecture <span>Multi-Brand Solar PV Operations Studio</span></footer>
+    <main class="main-content" id="view-root" tabindex="-1" aria-live="polite"><div class="loading-view"><div class="loading-spinner"></div><h1>Menyiapkan ruang kerja...</h1><p>Memuat skenario operasional simulasi.</p></div></main>
+    <footer class="bottom-note">© 2026 Proper Energy · Prototipe interaktif lokal oleh My AI Custom <span>Data simulasi · Tidak terhubung ke inverter fisik</span></footer>
   </div>
 </div>
 <div class="screen-overlay" id="nav-backdrop" hidden></div>
 <div class="toast-wrap" id="toast-region" role="status" aria-live="polite"></div>
 <div class="modal-backdrop" id="modal-backdrop" hidden><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"><div class="modal-top"><div><div class="eyebrow">PROPER ENERGY</div><h2 id="modal-title">Tindakan</h2></div><button type="button" id="modal-close" class="icon-action" aria-label="Tutup dialog">×</button></div><div id="modal-content"></div></div></div>
-<div class="auth-screen" id="auth-screen" hidden><div class="auth-graphic"><div class="auth-grid"></div><div class="auth-topline"><img src="/assets/proper-energy-logo-white.png" alt="Proper Energy" style="height:26px;width:auto;" /><span>OPERATIONS STUDIO</span></div><div class="auth-masthead"><span class="auth-overline">THE INTELLIGENT SOLAR WORKSPACE</span><h1>Energy made<br/><em>intelligent.</em></h1><p>Satu tempat untuk memantau energi surya, menganalisis anomali, mengelola teknisi, dan menjaga performa PLTS Tumbuh.</p><div class="auth-facts"><span><strong>16</strong> Lokasi aktif</span><span><strong>6</strong> Merek inverter</span><span><strong>1</strong> NOC Terpusat</span></div></div><div class="auth-visual" aria-hidden="true"><svg viewBox="0 0 600 270" preserveAspectRatio="none"><defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#DBF29A" stop-opacity=".2"/><stop offset="1" stop-color="#DBF29A" stop-opacity="1"/></linearGradient></defs><path d="M0 220 60 205 115 210 175 159 229 190 282 102 338 133 398 60 465 95 520 30 600 53" stroke="url(#a)" stroke-width="2.6" fill="none"/><path d="M0 220 60 205 115 210 175 159 229 190 282 102 338 133 398 60 465 95 520 30 600 53V270H0Z" fill="#DBF29A" fill-opacity=".07"/></svg></div><div class="auth-footer">BUILT FOR PROPER ENERGY. POWERED BY AI.</div></div><div class="auth-right"><div class="auth-panel"><span class="small-chip"><i></i> GANTI PERAN PENGGUNA</span><h2>Welcome to<br/>operations studio.</h2><p>Pilih peran untuk mencoba workflow dari sudut pandang operator, teknisi, manajemen, atau finance.</p><form id="login-form"><label for="login-role">Pilih Akun Peran</label><select id="login-role" name="email" required><option value="owner@properenergy.local">Owner / Manajemen</option><option value="operator@properenergy.local" selected>Operator Monitoring (NOC)</option><option value="teknisi@properenergy.local">Teknisi Lapangan</option><option value="finance@properenergy.local">Finance & Administrasi</option></select><label for="login-password">Password Akses</label><input id="login-password" type="password" name="password" value="Demo123!" autocomplete="off" required /><button class="primary-btn login-submit" type="submit">Masuk ke dashboard <span>↗</span></button><div class="login-error" id="login-error" role="alert"></div></form><div class="auth-disclaimer"><span>ⓘ</span> Klik masuk untuk beralih peran kerja secara instan.</div></div></div></div>
+<div class="auth-screen" id="auth-screen"><div class="auth-graphic"><div class="auth-grid"></div><div class="auth-topline"><img src="/assets/proper-energy-logo-white.png" alt="Proper Energy" style="height:26px;width:auto;" /><span>STUDIO OPERASIONAL</span></div><div class="auth-masthead"><span class="auth-overline">KOKPIT SURYA PINTAR NUSANTARA</span><h1>Mentari Menyinari,<br/>Daya Mandiri,<br/><em>Aman Terkendali.</em></h1><p>Satu ruang kendali untuk memantau energi, mendeteksi anomali, menugaskan teknisi, dan melayani pelanggan dengan pasti.</p><div class="auth-facts"><span><strong>16</strong> Lokasi Demo</span><span><strong>6</strong> Merek Inverter</span><span><strong>1</strong> Pusat Kendali</span></div></div><div class="auth-visual" aria-hidden="true"><svg viewBox="0 0 600 270" preserveAspectRatio="none"><defs><linearGradient id="a" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#DBF29A" stop-opacity=".2"/><stop offset="1" stop-color="#DBF29A" stop-opacity="1"/></linearGradient></defs><path d="M0 220 60 205 115 210 175 159 229 190 282 102 338 133 398 60 465 95 520 30 600 53" stroke="url(#a)" stroke-width="2.6" fill="none"/><path d="M0 220 60 205 115 210 175 159 229 190 282 102 338 133 398 60 465 95 520 30 600 53V270H0Z" fill="#DBF29A" fill-opacity=".07"/></svg></div><div class="auth-footer">DIBANGUN DENGAN TELITI. DIPACU ENERGI MENTARI.</div></div><div class="auth-right"><div class="auth-panel"><span class="small-chip"><i></i> DEMO LOKAL PRIBADI</span><h2>Selamat Datang di<br/>Studio Operasi.</h2><p>Pilih peran demo untuk mencoba alur kerja dari sudut pandang operator, teknisi, manajemen, atau finance.</p><form id="login-form"><label for="login-role">Akun demonstrasi</label><select id="login-role" name="email" required><option value="owner@properenergy.local">Manajemen / Pemilik Aset</option><option value="operator@properenergy.local" selected>Operator Pemantauan (NOC)</option><option value="teknisi@properenergy.local">Teknisi Lapangan</option><option value="finance@properenergy.local">Keuangan & Administrasi</option></select><label for="login-password">Kata sandi demo</label><input id="login-password" type="password" name="password" value="Demo123!" autocomplete="off" required /><button class="primary-btn login-submit" type="submit">Masuk ke Dashboard <span>↗</span></button><div class="login-error" id="login-error" role="alert"></div></form><div class="auth-disclaimer"><span>ⓘ</span> Akun & kata sandi ini hanya untuk pengujian lokal. Bukan autentikasi siap produksi.</div><a href="/" class="pitch-link">Kembali ke Website Utama <span>↗</span></a></div></div></div>
 </body></html>

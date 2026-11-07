@@ -27,6 +27,14 @@ export default defineConfig({
   integrations: [tailwind()],
   output: 'static',
   vite: {
+    server: {
+      proxy: {
+        '/ops-api': {
+          target: 'http://127.0.0.1:4173',
+          changeOrigin: true
+        }
+      }
+    },
     plugins: [
       {
         name: 'dev-api-chat',

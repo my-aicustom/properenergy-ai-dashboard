@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://properenergy.id/sitemap.xml

@@ -1,0 +1,104 @@
+[
+  {
+    "name": "Beranda (Home)",
+    "path": "/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "PLTS Tumbuh",
+    "path": "/plts-tumbuh/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Solusi Starter",
+    "path": "/solusi/starter/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Solusi Safer",
+    "path": "/solusi/safer/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Solusi Signature",
+    "path": "/solusi/signature/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Platform AI",
+    "path": "/platform-ai/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Fleet Monitoring",
+    "path": "/monitoring-fleet/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Simulasi Kalkulator",
+    "path": "/simulasi/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Paket & Harga",
+    "path": "/harga/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Kemitraan",
+    "path": "/mitra/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Tentang Perusahaan",
+    "path": "/tentang/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Jurnal Wawasan",
+    "path": "/wawasan/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Artikel Wawasan",
+    "path": "/wawasan/memilih-plts/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "FAQ & Bantuan",
+    "path": "/faq/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Kontak",
+    "path": "/kontak/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Kebijakan Privasi",
+    "path": "/privasi/",
+    "status": "PASSED",
+    "errors": []
+  },
+  {
+    "name": "Studio Demo & Login",
+    "path": "/demo/",
+    "status": "PASSED",
+    "errors": []
+  }
+]

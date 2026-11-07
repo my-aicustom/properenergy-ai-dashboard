@@ -1,8 +1,8 @@
 # Proper Energy — 7-step Presentation Demo (10–15 minute track)
 
-**Objective:** Show Pak Eeng a dashboard demo separate from the existing sales pitch. The experience is designed around a human operator who needs to detect, diagnose, assign, execute, verify, and report.
+**Objective:** Start with the redesigned `/` experience and transition into the hands-on dashboard `/demo/`. The experience is designed around a human operator who needs to detect, diagnose, assign, execute, verify, and report.
 
-Open `/demo/` → sign in as **Operator Monitoring** with `Demo123!` → click **Tour**. All data is fake; explicitly tell the audience the integrations are not connected.
+Open `/` → show the new energy hero, switch a scenario, click **Explore live demo** to open `/demo/` → sign in as **Operator Monitoring** with `Demo123!` → click **Tour**. All data is fake; explicitly tell the audience the integrations are not connected.
 
 1. **Overview (1–2 min):** Point to total capacity, fleet health and active critical incidents. Story: “one place, multiple homes and brands.” Click a priority incident.
 2. **Fleet (1–2 min):** Filter `Offline` to find Serpong Garden, open its detail. Compare Deye/Solis/Huawei/GoodWe/Sungrow/Growatt from one screen instead of six apps.
@@ -14,6 +14,6 @@ Open `/demo/` → sign in as **Operator Monitoring** with `Demo123!` → click *
 
 **Close line:** “This prototype shows our operating model: multi-brand monitoring, decision support, dispatch, customer care and proof of value. Hardware integration will be the next verified implementation phase.”
 
-**Fallback:** If Astro fails to install, run `node local-server/server.mjs` and open `http://127.0.0.1:4173/demo/` directly; the interactive demo does not require Astro at runtime. Static browser fallback also works on `/demo/` once built/deployed.
+**Fallback:** Run `node local-server/server.mjs`; open `http://127.0.0.1:4173/` (redesigned pitch) or `http://127.0.0.1:4173/demo/` (dashboard); the interactive demo does not require Astro at runtime. Static browser fallback also works on `/demo/` once built/deployed.
 
-**Rehearsal:** Reset via Settings (requires Owner role), sign out, re-enter as Operator for a consistent narrative. Test on the actual presentation laptop; mobile layout is designed responsively but not independently screenshot-certified.
+**Rehearsal:** Reset via Settings (requires Owner role), sign out, re-enter as Operator for a consistent narrative. Test on the actual presentation laptop; the pitch was screenshot-tested at 390 px mobile width; rehearse the dashboard on the actual presentation display.
